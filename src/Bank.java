@@ -1,4 +1,4 @@
-import java.util.HashMap
+import java.util.HashMap;
 
 public class Bank {
     private String bankName;
