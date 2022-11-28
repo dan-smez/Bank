@@ -2,17 +2,23 @@ import java.util.HashMap;
 
 public class Bank {
     private String bankName;
-    private HashMap<Long, Account> accounts;
+    private HashMap<Integer, Account> accounts;
+    private int routingNum;
 
-    public Bank(String name) {
+    public Bank(String name, int routing) {
         this.bankName = name;
+        this.routingNum = routing;
     }
 
     public void getName() {
         System.out.println(bankName);
     }
 
-    public Account getAccountInfo(Long accountNum) {
+    public void getBankInfo() {
+        System.out.println(routingNum);
+    }
+
+    public Account getAccountInfo(Double accountNum) {
         return accounts.get(accountNum);
     }
 }

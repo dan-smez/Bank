@@ -1,10 +1,11 @@
 public class Account {
-    private Long accountNum;
+    private Double accountNum;
     private Double balance;
     private Double rate;
 
-    public Account(Double deposit) {
+    public Account(Double deposit, Double accNum) {
         this.balance = deposit;
+        this.accountNum = accNum;
     }
 
     public void printAccountNumber() {
