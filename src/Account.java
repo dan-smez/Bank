@@ -1,15 +1,22 @@
 public class Account {
-    private Double accountNum;
-    private Double balance;
-    private Double rate;
+    private String holderName;
+    private int accountNum;
+    private double balance;
+    private double rate;
 
-    public Account(Double deposit, Double accNum) {
+    public Account(String name, double deposit, int accNum) {
+        this.holderName = name;
         this.balance = deposit;
         this.accountNum = accNum;
+        this.rate = 0.01;
     }
 
-    public void printAccountNumber() {
+    public void checkAccInfo() {
+        System.out.println(holderName);
         System.out.println(accountNum);
+        System.out.println(balance);
+        System.out.println(rate);
+        System.out.println();
     }
 
     public void checkBalance() {

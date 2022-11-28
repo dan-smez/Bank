@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class Bank {
     private String bankName;
-    private HashMap<Integer, Account> accounts;
+    private HashMap<Integer, Account> accounts = new HashMap<>();
     private int routingNum;
 
     public Bank(String name, int routing) {
@@ -18,7 +18,13 @@ public class Bank {
         System.out.println(routingNum);
     }
 
-    public Account getAccountInfo(Double accountNum) {
+
+    public void addAccount(String name, double deposit, int accNum) {
+        Account newAcc = new Account(name, deposit, accNum);
+        System.out.println("Here is your account number: " + accNum);
+        accounts.put(accNum, newAcc);
+    }
+    public Account getAccountInfo(int accountNum) {
         return accounts.get(accountNum);
     }
 }
