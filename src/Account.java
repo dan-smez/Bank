@@ -3,6 +3,12 @@ public class Account {
     protected int accountNum;
     protected double balance;
     protected double rate;
+    protected Account(String name, double deposit, int accNum) {
+        this.holderName = name;
+        this.balance = deposit;
+        this.accountNum = accNum;
+        this.rate = 0.01;
+    }
     protected void checkAccInfo() {
         System.out.println(holderName);
         System.out.println(accountNum);
