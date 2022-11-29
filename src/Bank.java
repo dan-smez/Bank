@@ -20,7 +20,7 @@ public class Bank {
 
 
     public void addAccount(String name, double deposit, int accNum) {
-        Account newAcc = new Account(name, deposit, accNum);
+        Account newAcc = new Checking(name, deposit, accNum);
         System.out.println("Here is your account number: " + accNum);
         accounts.put(accNum, newAcc);
     }
