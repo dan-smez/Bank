@@ -18,8 +18,7 @@ public class Bank {
         System.out.println(routingNum);
     }
 
-
-    public void addAccount(String name, double deposit, int accNum) {
+    public void addCheckingAccount(String name, double deposit, int accNum) {
         Account newAcc = new Checking(name, deposit, accNum);
         System.out.println("Here is your account number: " + accNum);
         accounts.put(accNum, newAcc);

@@ -7,7 +7,7 @@ public class Main {
         Bank chaseBank = new Bank("Chase Bank", 200000);
         chaseBank.getName();
 
-        chaseBank.addAccount("Dan S.", 100.00, 123456789);
+        chaseBank.addCheckingAccount("Dan S.", 100.00, 123456789);
         Account myAccount = chaseBank.getAccountInfo(123456789);
         myAccount.checkAccInfo();
     }
